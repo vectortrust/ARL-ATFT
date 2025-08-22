@@ -1,0 +1,9 @@
+project: ATFT_2025
+last_updated: 2025-08-13T11:06:16Z
+files:
+  - name: meta.yaml
+    sha256: d9496c11cad406494c5f45a1ca5dae4b70e50d342dd579006a9f6cab194dc516
+  - name: log.md
+    sha256: c99f90eaabc29aee18aa9f168f1c1f32e791ab0c351345511934448f2f988506
+  - name: refs.md
+    sha256: 955328d2f7adddf71ba1606a74dceb018af167e4ba257b12e988549442f54a6d

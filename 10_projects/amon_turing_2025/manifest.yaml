@@ -1,0 +1,9 @@
+project: amon_turing_2025
+last_updated: 2025-08-13T13:01:37Z
+files:
+  - name: meta.yaml
+    sha256: d9496c11cad406494c5f45a1ca5dae4b70e50d342dd579006a9f6cab194dc516
+  - name: log.md
+    sha256: 187bc66e9119cac893c74c97df8cd2ac03fd6a41e120ebc1e515a3baf591220a
+  - name: refs.md
+    sha256: 955328d2f7adddf71ba1606a74dceb018af167e4ba257b12e988549442f54a6d
