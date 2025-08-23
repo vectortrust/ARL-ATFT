@@ -1,9 +1,0 @@
-{
-        "version": "v0.0"
-	"task": "deploy_wireguard",
-	"hosts": ["r6260", "ec2"],
-	"params": {
-		"subnet": "10.200.200.0/24",
-		"port": 51820
-	}
-}

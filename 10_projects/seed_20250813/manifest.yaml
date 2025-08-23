@@ -1,9 +1,0 @@
-project: seed_20250813
-last_updated: 2025-08-13T12:16:51Z
-files:
-  - name: meta.yaml
-    sha256: 02d6d65dba135d96f5137ac20a0bb5d73c1941cfd3b5c5618722f947ba0df961
-  - name: log.md
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-  - name: refs.md
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855

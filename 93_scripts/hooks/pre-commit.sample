@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-set -e
-proj="${PROJECT:-}"
-if [[ -z "$proj" && -d 10_projects ]]; then proj="$(ls 10_projects | head -n1)"; fi
-if [[ -x tools/integrity.sh && -n "$proj" ]]; then
-  ./tools/integrity.sh "$proj" update
-  ./tools/integrity.sh "$proj" verify
-  git add "10_projects/$proj/manifest.yaml" "10_projects/$proj/"*.sha256 || true
-fi
