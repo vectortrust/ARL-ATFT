@@ -1,0 +1,162 @@
+
+\documentclass[12pt]{article}
+\usepackage[letterpaper,margin=0.6in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0.2em,topsep=0.2em}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\newcommand{\usage}[1]{\textbf{Usage:} #1}
+\newcommand{\where}[1]{\textbf{Where am I?} #1}
+
+\begin{document}
+\pagestyle{empty}
+
+% --- Page 1: Arithmetic / Algebra ---
+\section*{1. Arithmetic / Algebra}
+\begin{itemize}
+  \item \(\;a^2 + b^2 = c^2\) \quad (Pythagoras)
+  \item \(\;x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}\) \quad (Quadratic)
+  \item \(\; (x+y)^2 = x^2 + 2xy + y^2\) \quad (Binomial)
+  \item \(\; \log(ab)=\log a + \log b\), \(\; \log(a^b)=b\log a\)
+\end{itemize}
+\usage{numbers, roots, balancing, quick manipulation.}\\
+\where{Foundations.}
+
+\newpage
+% --- Page 2: Geometry / Trigonometry ---
+\section*{2. Geometry / Trigonometry}
+\begin{itemize}
+  \item \(\; \sin^2\theta + \cos^2\theta = 1\)
+  \item \(\; e^{i\theta} = \cos\theta + i\sin\theta\) \quad (Euler)
+  \item \(\; \text{Law of sines: } \dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}\)
+  \item \(\; \text{Law of cosines: } c^2=a^2+b^2-2ab\cos C\)
+\end{itemize}
+\usage{angles, waves, triangles, oscillations.}\\
+\where{Foundations.}
+
+\newpage
+% --- Page 3: Calculus (Basics) ---
+\section*{3. Calculus (Basics)}
+\begin{itemize}
+  \item \(\; \dfrac{d}{dx} x^n = n x^{n-1}\), \(\;\dfrac{d}{dx}\sin x=\cos x\)
+  \item \(\; \int x^n dx = \dfrac{x^{n+1}}{n+1} + C\) \; \((n\neq -1)\)
+  \item \(\; \dfrac{d}{dx} e^{kx} = k e^{kx}\), \(\; \int e^{kx}dx=\dfrac{1}{k}e^{kx}+C\)
+  \item \(\; \text{FTC: } \dfrac{d}{dx}\!\int_{a}^{x} f(t)dt = f(x)\)
+\end{itemize}
+\usage{rates of change, area under curves, motion.}\\
+\where{Foundations.}
+
+\newpage
+% --- Page 4: ODEs ---
+\section*{4. ODEs (Evolution in time)}
+\begin{itemize}
+  \item Exponential: \(y' = k y \Rightarrow y(t)=C e^{kt}\)
+  \item Harmonic osc.: \(y''+\omega^2 y=0 \Rightarrow y=A\cos\omega t + B\sin\omega t\)
+  \item Linear 1st order: \(y' + p(x)y = q(x)\) \; (IF: \(\mu=e^{\int p dx}\))
+  \item Logistic: \(y' = r y(1-\frac{y}{K})\)
+\end{itemize}
+\usage{population, springs, circuits, control.}\\
+\where{Change \& motion.}
+
+\newpage
+% --- Page 5: PDEs / Fields ---
+\section*{5. PDEs / Fields}
+\begin{itemize}
+  \item Wave: \(\partial_t^2 u = c^2 \nabla^2 u\)
+  \item Heat/Diffusion: \(\partial_t u = D \nabla^2 u\)
+  \item Laplace/Poisson: \(\nabla^2 \phi = 0,\; \nabla^2 \phi = -\rho/\epsilon\)
+  \item Continuity: \(\partial_t \rho + \nabla\!\cdot(\rho \mathbf v)=0\)
+\end{itemize}
+\usage{fluids, heat, acoustics, EM, quantum.}\\
+\where{Fields.}
+
+\newpage
+% --- Page 6: Linear Algebra ---
+\section*{6. Linear Algebra}
+\begin{itemize}
+  \item Eigenproblem: \(A x = \lambda x\), \; diagonalization via \(A = PDP^{-1}\)
+  \item Determinant \(\det(A)\): invertibility, volume scaling
+  \item Inner product: \(\langle u,v\rangle\), orthogonality, projections
+  \item SVD: \(A = U \Sigma V^\top\) (modes, least squares)
+\end{itemize}
+\usage{coupled systems, modes, dimensionality reduction.}\\
+\where{Toolkits.}
+
+\newpage
+% --- Page 7: Special Functions ---
+\section*{7. Special Functions (named solutions)}
+\begin{itemize}
+  \item Bessel: \(x^2 y'' + x y' + (x^2-n^2) y=0\)
+  \item Legendre: \((1-x^2) y'' - 2x y' + \ell(\ell+1) y=0\)
+  \item Hermite: \(y'' - 2x y' + 2n y=0\)
+  \item Spherical harmonics: \(Y_\ell^{m}(\theta,\phi)\) (angular modes)
+\end{itemize}
+\usage{cylinders, spheres, oscillators, atoms.}\\
+\where{Toolkits.}
+
+\newpage
+% --- Page 8: Complex Analysis ---
+\section*{8. Complex Analysis}
+\begin{itemize}
+  \item Euler: \(e^{i\theta}=\cos\theta + i\sin\theta\)
+  \item Cauchy integral: \(f(z_0)=\dfrac{1}{2\pi i}\oint \dfrac{f(z)}{z-z_0}dz\)
+  \item Residue theorem: \(\oint f(z)dz=2\pi i \sum \mathrm{Res}(f;\,z_k)\)
+  \item Fourier kernel: \(e^{ikx}\) (diagonalizes derivatives)
+\end{itemize}
+\usage{oscillations, integrals, transforms, dispersion.}\\
+\where{Toolkits.}
+
+\newpage
+% --- Page 9: Probability / Statistics ---
+\section*{9. Probability / Statistics}
+\begin{itemize}
+  \item Normal: \(p(x)=\dfrac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/2\sigma^2}\)
+  \item Bayes: \(P(A|B)=\dfrac{P(B|A)P(A)}{P(B)}\)
+  \item LLN/CLT: sums of iid \(\to\) normal (with scaling)
+  \item Entropy: \(H=-\sum p_i \log p_i\)
+\end{itemize}
+\usage{uncertainty, inference, thermodynamics, info.}\\
+\where{Toolkits.}
+
+\newpage
+% --- Page 10: Mechanics ---
+\section*{10. Mechanics}
+\begin{itemize}
+  \item Newton: \(F = m a\)
+  \item Energy: \(E_k=\tfrac{1}{2}mv^2,\quad E_p=mgh\)
+  \item Lagrangian: \(L=T-V\), \; Euler–Lagrange: \(\dfrac{d}{dt}\frac{\partial L}{\partial \dot q}-\frac{\partial L}{\partial q}=0\)
+  \item Hamiltonian: \(H = \sum p_i \dot q_i - L\)
+\end{itemize}
+\usage{motion, forces, variational principles.}\\
+\where{Physics anchors.}
+
+\newpage
+% --- Page 11: Quantum ---
+\section*{11. Quantum}
+\begin{itemize}
+  \item Schrödinger: \(i\hbar\,\partial_t \psi = \left(-\dfrac{\hbar^2}{2m}\nabla^2+V\right)\psi\)
+  \item Probability current: \(\mathbf j=\dfrac{\hbar}{m}\Im(\psi^*\nabla\psi)\)
+  \item Commutator: \([x,p]=i\hbar\), \; Uncertainty: \(\Delta x\,\Delta p \ge \hbar/2\)
+  \item Madelung: continuity + HJ + quantum potential \(Q\)
+\end{itemize}
+\usage{atoms, spectra, tunneling, coherence.}\\
+\where{Physics anchors.}
+
+\newpage
+% --- Page 12: Relativity / Fields ---
+\section*{12. Relativity / Fields}
+\begin{itemize}
+  \item \(E=mc^2\). \; 4-vector: \(x^\mu=(ct,\mathbf x)\)
+  \item Maxwell (vacuum): \(\nabla\cdot\mathbf E=0,\;\nabla\cdot\mathbf B=0,\;\nabla\times\mathbf E=-\partial_t\mathbf B,\;\nabla\times\mathbf B=\mu_0\epsilon_0\,\partial_t\mathbf E\)
+  \item Einstein: \(G_{\mu\nu}=\dfrac{8\pi G}{c^4}T_{\mu\nu}\)
+  \item Action: \(S=\int \mathcal L\, d^4x\) \; (fields from extremals)
+\end{itemize}
+\usage{spacetime, gravity, EM fields, cosmology.}\\
+\where{Physics anchors.}
+
+\end{document}

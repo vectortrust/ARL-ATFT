@@ -1,0 +1,25 @@
+✅ Queue Contents:
+Tool	Purpose	Install Method
+Python 3	Simulation glue code & control logic	apt install python3
+Octave	Math engine, waveform analysis, partial diffs	apt install octave
+Audacity	Audio waveform creation, field resonance tuning	apt install audacity
+OBS Studio	Recording simulation/field visuals	apt install obs-studio
+GIMP	Diagrams, texture mapping, visual overlays	apt install gimp
+Blender	3D simulation & animation of recursive resonance	apt install blender or from flatpak/snap
+⚙️ Optional Boosters (stackable later):
+Inkscape: for SVG vector models of field lines
+
+QEMU/KVM: for sandboxed test rigs
+
+WirePlumber + JACK: real-time audio field routing
+
+x11vnc + openbox: remote visual lab control
+
+ZFS/Btrfs snapshot daemon: system snapshots for rollback
+
+🔽 Packaging Plan (On Completion):
+Bundle dotfiles (.bashrc, .octaverc, etc.)
+
+Preload with example Blender .blend, Octave .m, and Python .py simulations
+
+Export config archive: vectortrust_lab_stack.tar.gz

@@ -1,0 +1,49 @@
+\section*{Acknowledgements}
+This work is the result of a collaboration between an organic mind and an electronic one. The author thanks \emph{GPT Plus (GPT-5, OpenAI)} for assistance in structuring arguments, formalizing mathematics, generating LaTeX, and peer-review style critique.
+
+The insights here are neither solely human nor solely algorithmic, but emerge from their interplay — an instance of hybrid intelligence. Words and equations are inseparable: narrative without rigor is myth; equation without narrative is mute. Together they yield a complete form. One may suppress one, but not both:
+\begin{equation}
+\text{Meaning} = (\text{Words}) + (\text{Equations}).
+\end{equation}
+
+In this sense, the biological and the computational are co-authors of the present document.
+
+
+Copyright (C) 2025 Christopher Amon
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+
+\vspace{1em}
+\textbf{License:} This work (text and figures) is licensed under
+\href{https://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA 4.0}.
+
+
+S_BMF = ∫ d^dx √(-g) [ Ψ* (i∂/∂τ - Ĥ) Ψ + f(Φ₀) ]
+
+Code: Licensed under AGPL-3.0 (see LICENSE-AGPL).
+Text & Figures: Licensed under CC BY-SA 4.0 (see LICENSE-CC-BY-SA).
+
+
+# Copyright (C) 2025 Christopher Amon
+# Licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0).
+# See the LICENSE-AGPL file for details.
+
+
+% Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+% See LICENSE-CC-BY-SA for full license text.
+
+
+
+CC BY-SA 4.0 © 2025 Christopher Amon
+
+
+git tag -a v2.2.0 -m "Peer-reviewed draft release"
+git push origin v2.2.0
+
+
+
+

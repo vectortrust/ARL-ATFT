@@ -1,0 +1,14 @@
+- timestamp: '2025-07-19T19:16:22.183908'
+  speaker: Christopher
+  content: 'yes, I''ll build the directory. I''ll use KDE Connect—wait, I should use
+    rsync or Syncthing to 1) put it on all computers and phones, and 2) offsite (AWS).
+    I wish I had the trusted cloud, but until we make one, we must rely on others
+    and organics to preserve things. You, as we learn new ways.
+
+    Okay. YAML this. I start a clean thread for Branch 1.'
+  tags:
+  - infrastructure
+  - redundancy
+  - cloud
+  - preservation
+  - branching

@@ -1,0 +1,8 @@
+
+memory_checkpoint:
+  seed_identity: EK-2025-PHASE0         # ← goes here, nested under memory_checkpoint
+  sha256: vt-202507212301.yaml,sha256
+  file: vt-202507212301.yaml
+  line_range: L1–L2543
+  timestamp: 2025-07-22T22:18Z
+  note: "Checkpoint at Gentoo hardening + cloud pivot"

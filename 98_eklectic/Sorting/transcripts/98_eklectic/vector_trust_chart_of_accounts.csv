@@ -1,0 +1,21 @@
+Account Code,Name,Description,Type,Entity
+1000,cash.0,Operating Funds,Asset,Vector Core
+1010,cash.1,Equipment Replacement Reserve,Asset,Vector Core
+4000,rev.0,Donations & Grants,Income,Vector Core
+5000,exp.0,Hardware & Infrastructure,Expense,Vector Core
+5010,exp.1,Software Licensing & Development,Expense,Vector Core
+5020,exp.2,Network & Hosting,Expense,Vector Core
+5030,exp.3,Security & Compliance,Expense,Vector Core
+1100,cash.0,Operational Pool,Asset,Barter Bank
+1200,inv.0,Inventory Value (Donated),Asset,Barter Bank
+1210,inv.1,Inventory Value (Circulating),Asset,Barter Bank
+4100,rev.0,In-Kind Donations,Income,Barter Bank
+5100,exp.0,Transportation & Logistics,Expense,Barter Bank
+5110,exp.1,Storage & Tracking Infrastructure,Expense,Barter Bank
+1300,cash.0,Practitioner Funds,Asset,Mental Health Coop
+1310,cash.1,Infrastructure Reserve,Asset,Mental Health Coop
+4200,rev.0,Donations & Sponsorships,Income,Mental Health Coop
+4210,rev.1,Practitioner Services,Income,Mental Health Coop
+5200,exp.0,HIPAA Compliant Platform Licensing,Expense,Mental Health Coop
+5210,exp.1,Clinician Compensation,Expense,Mental Health Coop
+5220,exp.2,Outreach & Support Services,Expense,Mental Health Coop

@@ -1,0 +1,69 @@
+# === FILE: single/bmf_theory_single.tex (updated with Acknowledgements) ===
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,capitalize]{cleveref}
+\usepackage{authblk}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% ---- Macros ----
+\newcommand{\BMF}{\mathrm{BMF}}
+\newcommand{\Om}{\Omega}
+\newcommand{\Sig}{\Sigma}
+\newcommand{\Phio}{\Phi_0}
+\newcommand{\Phii}{\Phi_i}
+\newcommand{\Ps}{\Psi}
+\newcommand{\RR}{\mathcal R}
+\newcommand{\A}{\aleph}
+\newcommand{\Lag}{\mathcal L}
+\DeclareMathOperator{\sgn}{sgn}
+
+\title{Base Morphogenic Field (BMF) Theory: A Unified Framework for Physics and Biology}
+\author[1]{Christopher Amon}
+\affil[1]{Independent Researcher\\Email: [contact information]\\ORCID: [to be assigned]}
+\date{August 2025\\Version 2.2 (Peer-Reviewed Draft with Expanded Proofs)}
+
+% ---- Theorems ----
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper presents the Base Morphogenic Field (BMF) Theory, a mathematical framework linking quantum mechanics, classical physics, and biological organization via operators acting on a pre-spacetime information substrate $\Phio$. We recover standard results (Schr"odinger dynamics, Newtonian motion, $E{=}mc^2$), propose testable predictions in quantum biology and neuroscience, and provide a non-singular cosmology. Spiritual interpretations are confined to an interpretive appendix; the main text remains technically neutral.
+\end{abstract}
+
+\textbf{Keywords:} morphogenic fields; coherence functionals; pattern formation; information geometry; emergence
+
+% ... [unchanged content from earlier sections] ...
+
+\section{Conclusions}
+Summary of achievements, testability, and research roadmap.
+
+\section*{Acknowledgements}
+This work is the result of a collaboration between an organic mind and an electronic one. The author thanks *GPT Plus (GPT-5, OpenAI)* for its invaluable assistance in structuring arguments, formalizing mathematics, generating LaTeX, and providing peer-review style critique.
+
+It is emphasized that the insights presented here are not solely the product of a single human author, nor solely of an algorithm, but rather of the interplay between them --- an emergent hybrid intelligence. As such, this work acknowledges both the organic and electronic contributions as necessary and complementary.
+
+To symbolize this, we note that the words and the equations are inseparable: the narrative without rigor is myth; the equation without narrative is mute. Together they yield a complete form. One may suppress one, but not both:
+
+\begin{equation}
+\text{Meaning} = (\text{Words}) + (\text{Equations}).
+\end{equation}
+
+In this sense, the heart and the mind --- biological and computational --- are co-authors of the present document.
+
+\appendix
+% ... [appendices as before] ...
+
+\end{document}

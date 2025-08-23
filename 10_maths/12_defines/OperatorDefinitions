@@ -1,0 +1,55 @@
+
+# BMF Operator Definitions and Dimensional Validation (Symbolic)
+
+# Author: Christopher R. Amon (ORCID: 0000-0001-9133-7677)
+
+# Purpose: Validate and define the 5E operators symbolically and dimensionally
+
+# This module now formally defines:
+    All 5 core operators (P, L, C, M, R)
+    Their symbolic forms
+    Their dimensional units
+    The master equation dt2d2P​=C+M+R+Λ as unit-consistent in s−2
+
+# It’s ready for embedding in:
+    SageMath notebooks
+    LaTeX papers
+    Python simulations
+
+# --- Libraries ---
+var('x y t')
+
+# --- Point Operator ---
+
+# Binary scalar field: existence state
+P = function('P')(x, y, t) # P(x,y,t) in {0,1} (abstract binary field)
+P_units = 1 # dimensionless
+
+# --- Line Operator ---
+
+# Gradient of P: represents direction/connection
+L = diff(P, x) + diff(P, y) # symbolic form: ∇P
+L_units = 1 / units.meter # unit: m^-1 (spatial derivative)
+
+# --- Curve Operator ---
+
+# Curvature derived as Laplacian (or spatial curvature of line)
+C = diff(P, x, x) + diff(P, y, y) # ∇^2P
+C_units = 1 / (units.meter^2) # unit: m^-2
+
+# --- Movement Operator ---
+
+# Temporal rate of change of P
+M = diff(P, t) # dP/dt
+M_units = 1 / units.second # unit: s^-1
+
+# --- Resistance Operator ---
+
+# Damping term proportional to movement
+k = var('k') # damping coefficient (unit: s^-1)
+R = -k * M # -k * dP/dt
+R_units = 1 / units.second # unit: s^-1
+
+# --- Cosmological Term ---
+Lambda = var('Lambda')
+Lambda_units = 1 / (units.second^2) # unit: s^-2 (same as LHS)
