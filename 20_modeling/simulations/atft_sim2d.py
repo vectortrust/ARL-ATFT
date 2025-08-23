@@ -35,6 +35,8 @@ class Params:
     src_amp: float = 1.0
     src_sigma: float = 3.0
     out: str = "run"
+    save_pgm: bool = False
+    check_energy: bool = False
 
 
 def laplacian(u: np.ndarray, dx: float) -> np.ndarray:
@@ -72,6 +74,18 @@ def coherence_proxy(u: np.ndarray) -> float:
 def energy_like(u: np.ndarray, v: np.ndarray, c: float, dx: float) -> float:
     grad2 = np.sum((np.roll(u, -1, 0) - u) ** 2 + (np.roll(u, -1, 1) - u) ** 2)
     return 0.5 * (np.sum(v * v) + (c * c / (dx * dx)) * grad2)
+
+
+def save_pgm_image(u: np.ndarray, path: str) -> None:
+    arr = u.copy()
+    arr -= arr.min()
+    if arr.max() > 0:
+        arr /= arr.max()
+    img = (arr * 255.0).astype(np.uint8)
+    h, w = img.shape
+    with open(path, "wb") as f:
+        f.write(f"P5\n{w} {h}\n255\n".encode("ascii"))
+        f.write(img.tobytes())
 
 
 def run(p: Params) -> None:
@@ -116,6 +130,16 @@ def run(p: Params) -> None:
         w.writerow(["step", "energy_like", "coherence_proxy"])
         w.writerows(metrics_rows)
 
+    if p.save_pgm:
+        save_pgm_image(u, f"{out}.pgm")
+
+    if p.check_energy:
+        energies = np.array([row[1] for row in metrics_rows], dtype=float)
+        rel_std = float(energies.std() / (energies.mean() + 1e-12))
+        msg = f"Relative energy std (should be ~0 if k=0): {rel_std:.3e}\n"
+        Path(f"{out}_energy_check.txt").write_text(msg)
+        print(msg.strip())
+
     print(f"Saved {out}.npz and {out}_metrics.csv")
 
 
@@ -132,6 +156,8 @@ def parse_args() -> Params:
     ap.add_argument("--src-amp", type=float, default=1.0)
     ap.add_argument("--src-sigma", type=float, default=3.0)
     ap.add_argument("--out", type=str, default="run")
+    ap.add_argument("--save-pgm", action="store_true")
+    ap.add_argument("--check-energy", action="store_true")
     a = ap.parse_args()
     return Params(
         nx=a.nx,
@@ -145,9 +171,10 @@ def parse_args() -> Params:
         src_amp=a.src_amp,
         src_sigma=a.src_sigma,
         out=a.out,
+        save_pgm=a.save_pgm,
+        check_energy=a.check_energy,
     )
 
 
 if __name__ == "__main__":
     run(parse_args())
-

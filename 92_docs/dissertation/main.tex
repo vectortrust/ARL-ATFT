@@ -28,6 +28,15 @@ We present a unified field framework on a primordial substrate using five core o
 \section{Introduction}
 Motivation, scope, and contributions. Outline of the dissertation structure.
 
+\subsection{Thesis and Claims}
+This work proposes that a primitive substrate $\Phi_0$ supporting a field $\Psi$ and a minimal set of operators (Point $\hat P$, Line $\hat L$, Curve $\hat C$, Movement $\hat M$, Resistance $\hat R$) yields:
+\begin{itemize}
+  \item A conservative baseline that reduces to a scalar wave equation with a well-defined variational principle and Noether currents.
+  \item Recoveries of classical and quantum dynamics under appropriate limits and ans"atze (Newtonian limit; uncertainty via Cauchy--Schwarz; mapping to Schr"odinger-like evolution under slowly varying envelope approximations).
+  \item Coherence-centric predictions linking spatial structure to dynamical stability, testable via a Coherence Modal Cross-Interferometer (CMCI).
+  \item A reproducible modeling and measurement pipeline producing falsifiable, quantitative predictions.
+\end{itemize}
+
 \section{Background}
 Related work in unification attempts, morphogenetic fields, and coherence phenomena.
 
@@ -36,6 +45,17 @@ Related work in unification attempts, morphogenetic fields, and coherence phenom
 Define substrate $\Phi_0$ and field $\Psi$; domain, boundary conditions, normalization conventions.
 \subsection{Operators}
 Point ($\hat P$), Line ($\hat L$), Curve ($\hat C$), Movement ($\hat M$), Resistance ($\hat R$) with units and commutation relations.
+
+\subsection{Variational Formulation}
+We introduce a conservative baseline in which dissipation is absent ($\hat R=0$) and the dynamics follow from a Lagrangian density
+\begin{equation}
+  \mathcal{L}[\Psi] = \tfrac{1}{2}\, (\partial_t \Psi)^2 - \tfrac{c^2}{2}\, \lVert\nabla \Psi\rVert^2 + S\,\Psi\, ,
+\end{equation}
+with source $S$ and characteristic propagation speed $c$. The Euler--Lagrange equation yields
+\begin{equation}
+  \partial_t^2 \Psi - c^2\,\nabla^2\Psi = S\, ,
+\end{equation}
+which we identify with the Curve (spatial Laplacian) and Movement (time-derivative) operators. Conservation of energy and momentum follows from time and space translation symmetries (Noether's theorem). Phenomenological resistance is incorporated via a Rayleigh dissipation function $\mathcal{R} = \tfrac{k}{2}\,(\partial_t\Psi)^2$ leading to an additional term $-k\,\partial_t\Psi$ in the equation of motion.
 
 \section{Derivations}
 \subsection{Classical Mechanics}
@@ -54,10 +74,16 @@ Quantum biology signatures, neural coherence, and gravitational anomalies.
 \section{Instrumentation: CMCI}
 Architecture, acquisition chain, and measurement protocols for cross-spectrum coherence.
 
+\section{Simulation Methods}
+Numerical reference implementation uses a two-dimensional grid and an explicit scheme for the damped wave equation
+\begin{equation}
+  \partial_t^2 \Psi = c^2\,\nabla^2\Psi - k\,\partial_t\Psi + S\, .
+\end{equation}
+Convergence and stability are documented; energy conservation is verified in the $k{=}0$ limit. See repository path `20_modeling/simulations/` for code and configurations.
+
 \section{Discussion}
 Limitations, falsifiable predictions, and future work.
 
 \printbibliography
 
 \end{document}
-
