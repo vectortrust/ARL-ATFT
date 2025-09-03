@@ -1,0 +1,482 @@
+{
+  "root": ".",
+  "top": [
+    {
+      "name": "ai_memories",
+      "path": "ai_memories",
+      "type": "dir"
+    },
+    {
+      "name": "arl",
+      "path": "arl",
+      "type": "dir"
+    },
+    {
+      "name": "curation",
+      "path": "curation",
+      "type": "dir"
+    },
+    {
+      "name": "docs",
+      "path": "docs",
+      "type": "dir"
+    },
+    {
+      "name": "holding",
+      "path": "holding",
+      "type": "dir"
+    },
+    {
+      "name": "scripts",
+      "path": "scripts",
+      "type": "dir"
+    },
+    {
+      "name": "Zotero",
+      "path": "Zotero",
+      "type": "dir"
+    },
+    {
+      "name": "agplv3-88x31.png",
+      "path": "agplv3-88x31.png",
+      "type": "file"
+    },
+    {
+      "name": "Makefile",
+      "path": "Makefile",
+      "type": "file"
+    },
+    {
+      "name": "README.md",
+      "path": "README.md",
+      "type": "file"
+    },
+    {
+      "name": "script_template.sh",
+      "path": "script_template.sh",
+      "type": "file"
+    },
+    {
+      "name": "template_generator.sh",
+      "path": "template_generator.sh",
+      "type": "file"
+    }
+  ],
+  "repos": [
+    {
+      "path": "arl/arl-atft",
+      "files": 440,
+      "top_ext": [
+        [
+          "txt",
+          77
+        ],
+        [
+          "py",
+          36
+        ],
+        [
+          "md",
+          32
+        ],
+        [
+          "yaml",
+          31
+        ],
+        [
+          "pdf",
+          30
+        ],
+        [
+          "sha256",
+          26
+        ],
+        [
+          "docx",
+          19
+        ],
+        [
+          "sh",
+          17
+        ],
+        [
+          "html",
+          16
+        ],
+        [
+          "png",
+          15
+        ]
+      ],
+      "readme": "arl/arl-atft/README.md",
+      "license": null
+    },
+    {
+      "path": "arl/arl-cmci",
+      "files": 46,
+      "top_ext": [
+        [
+          "sample",
+          15
+        ],
+        [
+          "md",
+          9
+        ],
+        [
+          "txt",
+          3
+        ],
+        [
+          "pdf",
+          3
+        ],
+        [
+          "yaml",
+          2
+        ],
+        [
+          "py",
+          2
+        ],
+        [
+          "sh",
+          2
+        ],
+        [
+          "ipynb",
+          1
+        ],
+        [
+          "tex",
+          1
+        ],
+        [
+          "csv",
+          1
+        ]
+      ],
+      "readme": "arl/arl-cmci/README.md",
+      "license": "arl/arl-cmci/LICENSE.md"
+    },
+    {
+      "path": "holding/nexus/hunspell",
+      "files": 726,
+      "top_ext": [
+        [
+          "dic",
+          131
+        ],
+        [
+          "aff",
+          131
+        ],
+        [
+          "good",
+          113
+        ],
+        [
+          "wrong",
+          94
+        ],
+        [
+          "po",
+          73
+        ],
+        [
+          "sug",
+          35
+        ],
+        [
+          "cxx",
+          28
+        ],
+        [
+          "hxx",
+          23
+        ],
+        [
+          "m4",
+          11
+        ],
+        [
+          "morph",
+          10
+        ]
+      ],
+      "readme": "holding/nexus/hunspell/README.md",
+      "license": null
+    },
+    {
+      "path": "holding/v_care",
+      "files": 40,
+      "top_ext": [
+        [
+          "md",
+          12
+        ],
+        [
+          "sha256",
+          12
+        ],
+        [
+          "yaml",
+          9
+        ],
+        [
+          "asc",
+          3
+        ],
+        [
+          "sh",
+          2
+        ],
+        [
+          "txt",
+          1
+        ],
+        [
+          "sample",
+          1
+        ]
+      ],
+      "readme": "holding/v_care/README.md",
+      "license": null
+    },
+    {
+      "path": "holding/v_house",
+      "files": 29,
+      "top_ext": [
+        [
+          "md",
+          9
+        ],
+        [
+          "sha256",
+          8
+        ],
+        [
+          "yaml",
+          6
+        ],
+        [
+          "asc",
+          2
+        ],
+        [
+          "sh",
+          2
+        ],
+        [
+          "txt",
+          1
+        ],
+        [
+          "sample",
+          1
+        ]
+      ],
+      "readme": "holding/v_house/README.md",
+      "license": null
+    },
+    {
+      "path": "holding/vectortrust",
+      "files": 1181,
+      "top_ext": [
+        [
+          "dic",
+          131
+        ],
+        [
+          "aff",
+          131
+        ],
+        [
+          "good",
+          113
+        ],
+        [
+          "wrong",
+          94
+        ],
+        [
+          "md",
+          83
+        ],
+        [
+          "po",
+          73
+        ],
+        [
+          "txt",
+          56
+        ],
+        [
+          "yaml",
+          56
+        ],
+        [
+          "sha256",
+          53
+        ],
+        [
+          "sug",
+          35
+        ]
+      ],
+      "readme": "holding/vectortrust/atlas-memory-trust/README.md",
+      "license": "holding/vectortrust/template-repo/LICENSE"
+    },
+    {
+      "path": "holding/vt-cis/git",
+      "files": 1,
+      "top_ext": [
+        [
+          "md",
+          1
+        ]
+      ],
+      "readme": "holding/vt-cis/git/README.md",
+      "license": null
+    },
+    {
+      "path": "holding/vt-repositories/nexus",
+      "files": 736,
+      "top_ext": [
+        [
+          "dic",
+          131
+        ],
+        [
+          "aff",
+          131
+        ],
+        [
+          "good",
+          113
+        ],
+        [
+          "wrong",
+          94
+        ],
+        [
+          "po",
+          73
+        ],
+        [
+          "sug",
+          35
+        ],
+        [
+          "cxx",
+          28
+        ],
+        [
+          "hxx",
+          23
+        ],
+        [
+          "m4",
+          11
+        ],
+        [
+          "morph",
+          10
+        ]
+      ],
+      "readme": "holding/vt-repositories/nexus/README.md",
+      "license": "holding/vt-repositories/nexus/LICENSE.md"
+    },
+    {
+      "path": "holding/vt-repositories/vt-bmf",
+      "files": 10,
+      "top_ext": [
+        [
+          "yaml",
+          2
+        ],
+        [
+          "pdf",
+          2
+        ],
+        [
+          "docx",
+          2
+        ],
+        [
+          "txt",
+          1
+        ],
+        [
+          "md",
+          1
+        ],
+        [
+          "sh",
+          1
+        ],
+        [
+          "py",
+          1
+        ]
+      ],
+      "readme": "holding/vt-repositories/vt-bmf/README.md",
+      "license": null
+    }
+  ],
+  "counts": {
+    "files": 4177,
+    "by_ext": {
+      "js": 735,
+      "dic": 393,
+      "aff": 393,
+      "good": 339,
+      "wrong": 282,
+      "txt": 238,
+      "po": 219,
+      "md": 187,
+      "yaml": 109,
+      "sug": 105,
+      "sha256": 99,
+      "cxx": 84,
+      "pdf": 78,
+      "hxx": 69,
+      "sh": 59,
+      "py": 59,
+      "sample": 39,
+      "docx": 37,
+      "png": 34,
+      "m4": 33,
+      "morph": 30,
+      "mermaid": 28,
+      "json": 28,
+      "am": 27,
+      "asc": 23,
+      "html": 16,
+      "csl": 16,
+      "h": 15,
+      "zip": 12,
+      "in": 12,
+      "1": 12,
+      "ipynb": 10,
+      "tex": 9,
+      "vcxproj": 9,
+      "csv": 8,
+      "css": 8,
+      "odt": 6,
+      "yml": 6,
+      "lz": 6,
+      "header": 6,
+      "sed": 6,
+      "sin": 6,
+      "5": 6,
+      "test": 6,
+      "save": 5,
+      "pem": 5,
+      "blend": 4,
+      "gz": 3,
+      "7z": 3,
+      "lock": 3
+    }
+  }
+}

@@ -1,8 +1,11 @@
-# Local ignores
-00_meta
-99_Archives
+#
+.editconfig
+.codespellrc
 *~
 *.swp
+*.kate-swp
+*.ipynb_checkpoints
+.github
 
 
 
